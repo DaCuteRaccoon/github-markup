@@ -11,3 +11,58 @@ Superscript and subscript is created the same way as other inline formats. To cr
 
 === Special Characters
 ASCIIDoc will automatically convert textual representations of commonly-used special characters. For example, +(R)+ becomes ®, +(C)+ becomes © and +(TM)+ becomes ™.
+
+
+
+== Blocks
+
+=== Paragraphs
+ASCIIDoc allows paragraphs to have optional titles or icons to denote special sections. To make a normal paragraph, simply add a line between blocks and a new paragraph will start. If you want to title your paragraphs, adda line prefixed by . (full stop). An example paragraph with optional title is displayed below:
+
+```asciidoc
+.Optional Title
+
+This is my paragraph. It is two sentences long.
+```
+
+=== Source Blocks
+To create source blocks (long blocks of code), follow the same syntax as above but with an extra line denoting the inline source and lines of four dashes (+----+) delimiting the source block.. An example of Python source is below:
+
+```asciidoc
+.python.py
+[source,python]
+----
+# i just wrote a comment in python
+# and maybe one more
+----
+```
+
+=== Comment Blocks
+Comment blocks are useful if you want to keep notes for yourself inline but do not want them displayed to the public. To create a comment block, simply wrap the paragraph in dividers with four slashes (+////+). An example comment block is below:
+
+```asciidoc
+////
+My comment block is here now
+
+It can be multiple paragraphs. Really.
+////
+```
+
+=== Quote Blocks
+Quote blocks work much like comment blocks — simply create dividers using four underscores (+____+) around your quote. An example quote block is displayed below:
+
+```asciidoc
+____
+This is my quote block. Quote something nice here, otherwise there is no point in quoting.
+____
+```
+
+
+
+== Macros
+
+=== Links
+To create links to external pages, you can simply write the URI if you want the URI to link to itself. (i.e., `+https://github.com/+` will automatically be parsed to https://github.com/. If you want different text to be displayed, simply append it to the end of the URI in between +[ (brackets.)+ For example, `+https://github.com/[GitHub]+` will be parsed as https://github.com/[GitHub], with the URI pointing to `+https://github.com+`.
+
+=== Images
+Images in ASCIIDoc work much like hyperlinks, but image URLs are prefixed with image`:`. For example, to link to an image at `images/icons/home.png`, write `image:images/icons/home.png`. Alt text can be added by appending the text to the URI in [ (brackets).
