@@ -10,4 +10,4 @@ To display text as bold, wrap the text in * (asterisks). To display text as ital
 Superscript and subscript is created the same way as other inline formats. To create superscript text, wrap your text in ^ (carats). To create subscript text, wrap your text in ~ (tildes).
 
 === Special Characters
-+ASCIIDoc will automatically convert textual representations of commonly-used special characters. For example, (R) becomes ®, (C) becomes © and (TM) becomes ™.+
+ASCIIDoc will automatically convert textual representations of commonly-used special characters. For example, +(R)+ becomes ®, +(C)+ becomes © and +(TM)+ becomes ™.
