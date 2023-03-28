@@ -17,7 +17,7 @@ ASCIIDoc will automatically convert textual representations of commonly-used spe
 == Blocks
 
 === Paragraphs
-ASCIIDoc allows paragraphs to have optional titles or icons to denote special sections. To make a normal paragraph, simply add a line between blocks and a new paragraph will start. If you want to title your paragraphs, adda line prefixed by . (full stop). An example paragraph with optional title is displayed below:
+ASCIIDoc allows paragraphs to have optional titles or icons to denote special sections. To make a normal paragraph, simply add a line between blocks and a new paragraph will start. If you want to title your paragraphs, add a line prefixed by . (full stop). An example paragraph with optional title is displayed below:
 
 ```asciidoc
 .Optional Title
