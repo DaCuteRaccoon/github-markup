@@ -1,0 +1,13 @@
+== Text Formatting
+
+=== Headers
+ASCIIDoc headers can be written in two ways: with differing underlines or with different indentation using = (equals sign). ASCIIDoc supports headings 1-4. The editor will automatically use the = notation. To create a level one header, prefix your line with one =. Level two headers are created with == and so on.
+
+=== Bold / Italic
+To display text as bold, wrap the text in * (asterisks). To display text as italic, wrap the text in _ (underscores). To create monospace text, wrap the text in + (plus signs).
+
+=== Scripts
+Superscript and subscript is created the same way as other inline formats. To create superscript text, wrap your text in ^ (carats). To create subscript text, wrap your text in ~ (tildes).
+
+=== Special Characters
++ASCIIDoc will automatically convert textual representations of commonly-used special characters. For example, (R) becomes ®, (C) becomes © and (TM) becomes ™.+
